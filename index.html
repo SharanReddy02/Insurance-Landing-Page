@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Insure landing page</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <header class="flex justify-between p-3 items-center lg:mx-16">
+    <div>
+      <img src="images/logo.svg" alt="" class="logo">
+    </div>
+      <nav class="absolute top-14 right-0 bottom-0 left-0">
+        <div class="navbar-menu w-full" id="navbarMenu">
+          <ul class="pt-5 text-center pb-5">
+            <li class="p-4"><a href="#">How we work</a></li>
+            <li class="p-4"><a href="#">Blog</a></li>
+            <li class="p-4"><a href="#">Account</a></li>
+            <li class="p-4"><button class="border-2 uppercase"><a href="#">View plans</a></button></li>
+          </ul>
+          <img src="images/bg-pattern-mobile-nav.svg" alt="" class="w-full pt-5">
+        </div>
+      </nav>
+
+    <!-- Desktop Navbar -->
+    <div class="hidden lg:block">
+      <ul class="flex uppercase text-gray-500">
+        <li class="p-3"><a href="#">How we work</a></li>
+        <li class="p-3"><a href="#"> Blog</a></li>
+        <li class="p-3"><a href="#">Account</a></li>
+        <li class="p-3 border-black border-2 hover:bg-gray-700 hover:text-white"><a href="#">View plans</a></li>
+      </ul>
+    </div>
+
+    <button id="navbarToggle" ><img src="images/icon-hamburger.svg" alt=""></button>
+    <button id="closeButton" style="display: none;"><img src="images/icon-close.svg" alt=""></button>
+  </header>
+
+  <section class="lg:pb-72">
+    <div>
+      <img src="images/image-intro-mobile.jpg" alt="" class="w-full pt-3 lg:hidden">
+      <div class="highlight-1 py-20 px-5 lg:relative">
+        <img src="images/image-intro-desktop.jpg" alt="" class="absolute hidden lg:block right-20 bug">
+        <img src="images/bg-pattern-intro-left-desktop.svg" alt="" class="absolute -bottom-96 left-0 hidden lg:block">
+        <img src="images/bg-pattern-intro-left-mobile.svg" alt="" class="absolute top-0 left-0 lg:hidden">
+        <div class="lg:w-1/2 mx-4 my-4 p-5 text-left">
+          <h2 class="text-white text-5xl text-center pb-4 lg:text-6xl lg:text-left">Humanizing your insurance.</h2>
+        <p class="text-white p-2 lg:text-justify lg:pr-10 lg:p-0">
+          Get your life insurance coverage easier and faster. We blend our expertise
+          and technology to help you find the plan that’s right for you. Ensure you
+          and your loved ones are protected.
+        </p>
+        <div class="text-center pt-5 lg:text-left">
+          <button class="uppercase border-2">View plans</button>
+        </div>
+        </div>
+        <img src="images/bg-pattern-intro-right-desktop.svg" alt="" class="absolute top-0 h-full right-0 hidden lg:block">
+        <img src="images/bg-pattern-intro-right-mobile.svg" alt="" class="absolute right-0 -bottom-40 lg:hidden">
+      </div>
+    </div>
+  </section>
+  
+  
+  <section class="pt-32 lg:mx-10">
+    <div class="seperator text-center mx-auto lg:mx-7"></div>
+    <h2 class="text-center text-4xl mt-8 lg:text-left lg:mx-7">We’re different</h2>
+
+    <div class="pt-16 features px-4 text-center px-3 grid lg:grid-cols-3 md:grid-cols-2">
+      <div class="lg:text-left">
+        <img src="images/icon-snappy-process.svg" alt="" class="block mx-auto lg:m-0">
+        <h2>Snappy Process</h2>
+        <p>Our application process can be completed in minutes, not hours. Don’t get 
+          stuck filling in tedious forms.</p>
+      </div>
+  
+      <div>
+        <img src="images/icon-affordable-prices.svg" alt="" class="block mx-auto lg:m-0">
+        <h2>Affordable Prices</h2>
+        <p>We don’t want you worrying about high monthly costs. Our prices may be low, 
+          but we still offer the best coverage possible.</p>
+      </div>
+  
+      <div>
+        <img src="images/icon-people-first.svg" alt="" class="block mx-auto lg:m-0">
+        <h2>People First</h2>
+        <p>Our plans aren’t full of conditions and clauses to prevent payouts. We make 
+          sure you’re covered when you need it.</p>
+      </div>
+    </div>
+
+</section>
+
+<section class="py-20 px-4 mx-2 lg:hidden">
+  <div class="highlight-1 py-20 px-8">
+    <img src="images/bg-pattern-how-we-work-mobile.svg" alt="" class="absolute top-0 right-0">
+  <h2 class="text-white text-4xl text-center">Find out more about how we work</h2>
+  <div class="text-center pt-7">
+    <button class="border-2 uppercase">How we work</button>
+  </div>
+  </div>
+</section>
+
+<!-- Desktop Section -->
+<section class="highlight-1 py-20 px-20 hidden lg:block lg:mx-16  ">
+  <img src="images/bg-pattern-how-we-work-desktop.svg" alt="" class="absolute right-0 top-0 h-full">
+  <div class="flex justify-between py-5 px-5">
+    <h2 class="text-white text-5xl text-center w-3/5">Find out more about how we work</h2>
+    <div class=" pt-7"><button class="border-2 uppercase">How we work</button></div>
+  </div>
+</section>
+
+<footer class="relative lg:mt-32">
+  <div class="relative">
+    <img id="mobileImg" src="images/bg-pattern-footer-mobile.svg" alt="" class="absolute w-full top-0">
+    <img id="deskImg" src="images/bg-pattern-footer-desktop.svg" alt="" class="absolute">
+    <div class="pt-20 flex items-center justify-between">
+      <img src="images/logo.svg" alt="" class="block mx-auto lg:mx-16">
+      <ul class="flex p-5 justify-center footer-icons lg:mx-10">
+        <li><i class="fa-brands fa-square-facebook"></i></li>
+        <li><i class="fab fa-twitter"></i></li>
+        <li><i class="fab fa-pinterest"></i></li>
+        <li><i class="fab fa-instagram"></i></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-seperator"></div>
+  <div class="text-center large grid lg:grid-cols-4 md:grid-cols-2">
+    <div class="pt-10 lg:pt-0">
+      <h3>Our company</h3>
+      <ul>
+        <li>How we work</li>
+      <li>Why Insure?</li>
+      <li>View plans</li>
+      <li>Reviews</li>
+      </ul>
+    </div>
+    <div class="md:pt-9 lg:pt-0">
+      <h3>Help me</h3>
+      <ul>
+        <li>FAQ</li>
+        <li>Terms of use</li>
+        <li>Privacy policy</li>
+        <li>Cookies</li>
+      </ul>
+    </div>
+    <div>
+      <h3>Contact</h3>
+      <ul>
+        <li>Sales</li>
+        <li>Support</li>
+        <li>Live chat</li>
+      </ul>
+    </div>
+    <div>
+      <h3>Others</h3>
+      <ul>
+        <li>Careers</li>
+        <li>Press</li>
+        <li>Licenses</li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#" class="font-bold">Sharan Reddy</a>.
+  </div>
+
+  <script src="navbar.js"></script>
+</body>
+</html>

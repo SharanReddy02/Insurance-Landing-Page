@@ -1,0 +1,145 @@
+@import
+url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Karla:wght@400;700&display=swap');
+
+h1,h2,h3,h4,h5,h6{
+    font-family: "DM Serif Display",sans-serif;
+}
+body{
+    font-family: "Karla",sans-serif;
+}
+
+.attribution { font-size: 11px; text-align: center; text-transform: uppercase;}
+.attribution a { color: hsl(228, 45%, 44%); }
+
+.highlight-1{
+    background-color: hsl(256, 26%, 20%);
+    position: relative;
+}
+
+.seperator{
+    background-color: rgb(111, 99, 99);
+    height: 1px;
+    width: 150px;
+}
+
+.features h2{
+    font-size: 24px;
+    padding: 10px;
+    padding-top: 25px;
+}
+
+.features p{
+    color: grey;
+    padding: 2px;
+    padding-bottom: 50px;
+    text-indent: 7%;
+    justify-content: center;
+}
+
+
+
+footer{
+    background-color: whitesmoke;
+}
+
+footer h3{
+    color: grey;
+    padding-bottom: 5%;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+footer ul{
+    padding-bottom: 5%;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+footer li{
+    padding: 1%;
+}
+
+.footer-seperator{
+    background-color: rgb(155, 139, 139);
+    height: 1px;
+    width: 90%;
+    margin: auto;
+}
+
+.footer-icons li{
+    margin-inline: 7pt;
+    color: rgb(113, 111, 111);
+    font-size: larger;
+}
+
+.logo{
+    font-weight: 50;
+}
+
+.navbar-menu.show {
+    display: block;
+  }
+
+.navbar-menu {
+    display: none;
+    background-color: hsl(270, 9%, 17%);    
+    color: white;
+    text-transform: uppercase;
+    padding-top: 2%;
+    z-index: 1000;
+    /* width: fit-content; */
+}
+@media (min-width:1024px) and (max-width:1240px){
+    .bug{
+        width: 45%;
+        height: max-content;
+        
+    }
+}
+@media (max-width: 1023px){
+    #deskImg{
+        display: none;
+    }
+    button{
+        color: white;
+        padding: 2%;
+        padding-right: 7%;
+        padding-left: 7%;
+    }
+}
+@media (min-width: 1023px) {
+    #navbarToggle {
+      display: none;
+    }
+
+    .features{
+        text-align: left;
+        padding-inline: 8;
+        
+    }
+    .features p{
+        text-align: justify left;
+        text-indent: 0%;
+        padding-inline: 5%;
+        margin-inline: -2%;
+    }
+
+    .large{
+        padding-top: 4%;
+        text-align: left;
+        padding-left: 5%;
+    }
+
+    #mobileImg{
+        display: none;
+    }
+
+    button{
+        color: white;
+        padding: 1%; 
+        padding-right: 5%;
+        padding-left: 5%;
+        cursor: pointer;
+    }
+}
